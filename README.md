@@ -1,2 +1,2 @@
 # calculator-top
-A web calculator app
+A calculator app created with HTML, CSS and JS.
