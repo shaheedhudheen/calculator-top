@@ -1,14 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-* {
-    box-sizing: border-box;
-
-    margin: 0;
-    padding: 0;
-
-    font-family: 'Montserrat', sans-serif;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-h1{
-    text-align: center;
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 350px;
+  min-height: 500px;
+
+  padding: 10px;
+
+  border-style: solid;
+  border-radius: 15px;
+}
+
+.displays {
+  border-radius: px;
+}
+
+.upperDisplay {
+  font-size: 2rem;
+  text-align: end;
+
+  min-height: 100px;
+  background-color: #f8f8f8;
+  word-wrap: break-word;
+  word-break: break-all;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  padding: 5px;
+}
+.lowerDisplay {
+  font-size: 1.4rem;
+  text-align: end;
+
+  word-break: break-all;
+
+  min-height: 50px;
+  background-color: #f8f8f8;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 5px;
+}
+
+.buttons {
+  margin-top: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 15px;
+
+  border-radius: 20px;
+  border-style: none;
+}
+
+.cls {
+  background-color: #f47574;
+  color: #f0f0f0;
+}
+
+.opr {
+  background-color: #7bb5f8;
+  color: #f0f0f0;
+}
+.equal {
+  background-color: #25cc83;
+  color: #f0f0f0;
+}
+
+.number:hover {
+  background-color: #e5dfe0;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  transition: 0.1s all;
+}
+/* Adding transformation when the button is active */
+
+.btn:active {
+  transform: scale(0.9);
+  box-shadow: 1px 1px 10px 1px rgba(221, 146, 80, 0.24);
 }
