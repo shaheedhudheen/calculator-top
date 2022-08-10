@@ -23,19 +23,24 @@
   padding: 10px;
 
   border-style: solid;
+  border-width: 5px;
+  border-color: #f1f1f1;
   border-radius: 15px;
 }
 
 .displays {
-  border-radius: px;
+  border-radius: 5px;
 }
 
-.upperDisplay {
+.upperScreen {
+
+  border-radius: 5px;
+
   font-size: 2rem;
   text-align: end;
 
   min-height: 100px;
-  background-color: #f8f8f8;
+  background-color: #f1f1f1;
   word-wrap: break-word;
   word-break: break-all;
 
@@ -44,15 +49,19 @@
   justify-content: end;
 
   padding: 5px;
+
+  margin-bottom: 4px;
 }
-.lowerDisplay {
+.lowerScreen {
+
+  border-radius: 5px;
   font-size: 1.4rem;
   text-align: end;
 
   word-break: break-all;
 
   min-height: 50px;
-  background-color: #f8f8f8;
+  background-color: #f5f5f5;
 
   display: flex;
   align-items: center;
