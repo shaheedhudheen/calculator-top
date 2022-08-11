@@ -9,11 +9,19 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(to right, #E03D40, #653CC0);
+}
+
 .main {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+
 }
 
 .container {
@@ -22,18 +30,17 @@
 
   padding: 10px;
 
-  border-style: solid;
-  border-width: 5px;
   border-color: #f1f1f1;
   border-radius: 15px;
+
+  background-color: rgba(255, 255, 255, .80);
 }
 
 .displays {
   border-radius: 5px;
 }
 
-.upperScreen {
-
+.operationsScreen {
   border-radius: 5px;
 
   font-size: 2rem;
@@ -52,8 +59,7 @@
 
   margin-bottom: 4px;
 }
-.lowerScreen {
-
+.resultScreen {
   border-radius: 5px;
   font-size: 1.4rem;
   text-align: end;
@@ -76,6 +82,8 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
+
+
 
 .span-2 {
   grid-column: span 2;
@@ -106,6 +114,11 @@
 
 .number:hover {
   background-color: #e5dfe0;
+}
+
+.btn:hover{
+  background-color: rgba(255, 255, 255, .80);
+  color: black;
 }
 
 .btn {
